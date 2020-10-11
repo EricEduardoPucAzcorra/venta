@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+	<meta charset="utf-8">
+	<script type="text/javascript" src="vue.min.js"></script>
+
+<CENTER><div style="margin-top: 200px; height: 50%; width: 50%; background: white; border: 2px solid yellow;">
+		<div id="codigo" >
+
+			<div v-if="inf2==false"><br><br>
+			<input type="text" name="" placeholder="usuario" v-model="usu">
+			<br><br>
+			<input type="password" name="" placeholder="contraseña" v-model="passu">
+			<br><br>
+			<button v-on:click="validar('vali')">entrar</button>
+			</div>
+
+
+
+			
+			<div v-if=inf==true>
+			<br><br>
+			<input type="text"  placeholder="numero1" v-model="numm">
+			<br><br>
+			<input type="text"  placeholder="numero2" v-model="numm2">
+			<br><br>
+			<button v-on:click="va()">Calcular</button>
+			<br><br>
+
+			{{resultado2}}
+
+			<br><br><button v-on:click="salir()">salir</button>
+		    </div>
+
+		</div>
+</div> </CENTER>
+
+
+
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>

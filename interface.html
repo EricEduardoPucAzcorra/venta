@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="vue.min.js"></script>
+	<!-- <script type="text/javascript"></script> -->
+</head>
+<body>
+
+	<center><div style="width: 19%;  height: 90%; background: yellow" id="codigo">
+
+		{{texto}}
+	<br><br> 
+		<input type="text" name="" placeholder="Asigna valor"  class="num" v-model="num">
+		<br><br>
+<center><div class="contenedor">
+		<li><input type="button" name="1" class="bot" value="7" v-on:click="siete"></li>
+			<li><input type="button" name="1" class="bot" value="8" v-on:click="ocho"></li>
+				<li><input type="button" name="1" class="bot" value="9" v-on:click="nueve"></li>
+					<li><input type="button" name="1" class="bot" value="D" ></li>
+						<li><input type="button" name="1" class="bot" value="A" ></li>
+						
+</div></center>
+
+
+<center><div class="contenedor">
+		<li><input type="button" name="1" class="bot" value="4" v-on:click="cuatro" ></li>
+			<li><input type="button" name="1" class="bot" value="5" v-on:click="cinco"></li>
+				<li><input type="button" name="1" class="bot" value="6" v-on:click="seis"></li>
+					<li><input type="button" name="1" class="bot" value="x"></li>
+						<li><input type="button" name="1" class="bot" value="/" ></li>
+						<!-- 	<li><input type="button" name="1" class="bot" ></li> -->
+</div></center>
+
+<center><div class="contenedor">
+		<li><input type="button" name="1" class="bot" value="1" v-on:click="uno" ></li>
+			<li><input type="button" name="1" class="bot" value="2" v-on:click="dos"></li>
+				<li><input type="button" name="1" class="bot" value="3" v-on:click="tres"></li>
+					<li><input type="button" name="1" class="bot" value="+" v-on:click="suma()" ></li>
+						<li><input type="button" name="1" class="bot" value="-" v-model="nu1" ></li>
+							<!-- <li><input type="button" name="1" class="bot" ></li> -->
+</div></center>
+
+
+<center><div class="contenedor">
+		<li><input type="button" name="1" class="bot" value="0"></li>
+			<li><input type="button" name="1" class="bot" value="."></li>
+				<li><input type="button" name="1" class="bot" value="ex" ></li>
+					<li><input type="button" name="1" class="bot" value="ans"></li>
+						<li><input type="button" name="1" class="bot" value="=" v-on:click="igual()"></li>
+						<!-- 	<li><input type="button" name="1" class="bot" ></li> -->
+</div></center>
+
+
+<!-- <input type="text" name="" v-model="nu1">
+<input type="text" name="" v-model="nu2">
+<button v-on:click="suma()">sumar</button>
+<p>El resultado es{{resultado}}</p> -->
+	</div></center>
+
+
+
+
+<!-- <button></button> -->
+<style>
+	li{
+		list-style: none;
+		display: flex;
+		margin-left: 12px;
+		margin-bottom: 5PX;
+		margin-right: 12px;
+	}
+	.bot{
+		width: 25px;
+		height: 20px;
+	}
+	.contenedor{
+	/*	width: 5%;*/
+	width: 100%;
+		display: flex;
+	}
+	.num{
+		width: 90%;
+		height: 30px;
+		background: black;
+		color: white;
+	}
+
+</style>
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
